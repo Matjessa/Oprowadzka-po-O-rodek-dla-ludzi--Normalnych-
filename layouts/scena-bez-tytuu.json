@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.33005600491659554,
+    "zoomFactor": 0.30887412163426825,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -146,6 +146,22 @@
       "x": 404,
       "y": 312,
       "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 357,
+      "layer": "ui",
+      "name": "Panel_tekstowy",
+      "persistentUuid": "62057939-f555-4736-bea9-053fdea19da1",
+      "width": 1134,
+      "x": 368,
+      "y": 669,
+      "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -379,6 +395,34 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "bottomMargin": 9,
+      "height": 64,
+      "leftMargin": 9,
+      "name": "Panel_tekstowy",
+      "rightMargin": 9,
+      "tags": "",
+      "texture": "New image5",
+      "tiled": true,
+      "topMargin": 9,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 64,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "bottomEdgeAnchor": 2,
+          "leftEdgeAnchor": 1,
+          "name": "Anchor",
+          "relativeToOriginalWindowSize": true,
+          "rightEdgeAnchor": 2,
+          "topEdgeAnchor": 0,
+          "type": "AnchorBehavior::AnchorBehavior",
+          "useLegacyBottomAndRightAnchors": false
+        }
+      ]
     }
   ],
   "events": [
@@ -414,6 +458,14 @@
             "NewSprite",
             "TopDownMovement",
             "yes"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "Panel_tekstowy"
           ]
         }
       ]
@@ -624,22 +676,22 @@
       "conditions": [
         {
           "type": {
-            "value": "SourisSurObjet"
+            "value": "Distance"
           },
           "parameters": [
+            "NewSprite",
             "Npc",
-            "Left",
-            "",
+            "500",
             ""
           ]
         },
         {
           "type": {
-            "value": "MouseButtonPressed"
+            "value": "KeyPressed"
           },
           "parameters": [
             "",
-            "Left"
+            "e"
           ]
         },
         {
@@ -656,6 +708,18 @@
       "actions": [
         {
           "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "NewText",
+            "Npc.PointX(\"x\")",
+            "Npc.PointY(\"y\")",
+            "\"text\""
+          ]
+        },
+        {
+          "type": {
             "value": "ModVarGlobalTxt"
           },
           "parameters": [
@@ -666,36 +730,21 @@
         },
         {
           "type": {
-            "value": "Create"
-          },
-          "parameters": [
-            "",
-            "NewText",
-            "CursorX()",
-            "CursorY()",
-            "\"text\""
-          ]
-        },
-        {
-          "type": {
-            "value": "MettreXY"
-          },
-          "parameters": [
-            "NewText",
-            "=",
-            "CursorX() + 100",
-            "=",
-            "CursorY()"
-          ]
-        },
-        {
-          "type": {
             "value": "ModVarGlobal"
           },
           "parameters": [
             "textliczba",
             "+",
             "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "Panel_tekstowy",
+            ""
           ]
         }
       ]
@@ -731,6 +780,14 @@
             "textliczba",
             "-",
             "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "Panel_tekstowy"
           ]
         }
       ]
@@ -774,7 +831,7 @@
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
       "isLocked": false,
-      "name": "text",
+      "name": "ui",
       "renderingType": "",
       "visibility": true,
       "cameras": [],
@@ -790,7 +847,7 @@
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
       "isLocked": false,
-      "name": "kamera",
+      "name": "text",
       "renderingType": "",
       "visibility": true,
       "cameras": [],
@@ -798,6 +855,10 @@
     }
   ],
   "behaviorsSharedData": [
+    {
+      "name": "Anchor",
+      "type": "AnchorBehavior::AnchorBehavior"
+    },
     {
       "name": "Text_AutoTyping",
       "type": "AutoTyping::Text_AutoTyping"
