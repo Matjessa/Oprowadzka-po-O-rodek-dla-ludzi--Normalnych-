@@ -9,7 +9,7 @@
   "title": "",
   "v": 209,
   "uiSettings": {
-    "grid": false,
+    "grid": true,
     "gridType": "rectangular",
     "gridWidth": 32,
     "gridHeight": 32,
@@ -17,8 +17,8 @@
     "gridOffsetY": 0,
     "gridColor": 10401023,
     "gridAlpha": 0.8,
-    "snap": false,
-    "zoomFactor": 0.30887412163426825,
+    "snap": true,
+    "zoomFactor": 0.4027225833325958,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -154,14 +154,29 @@
       "angle": 0,
       "customSize": true,
       "depth": 0,
-      "height": 357,
+      "height": 352,
       "layer": "ui",
       "name": "Panel_tekstowy",
       "persistentUuid": "62057939-f555-4736-bea9-053fdea19da1",
-      "width": 1134,
-      "x": 368,
-      "y": 669,
+      "width": 1088,
+      "x": 416,
+      "y": 704,
       "zOrder": 10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "text",
+      "name": "Npc_tekst",
+      "persistentUuid": "e52c508d-d928-4ae8-b366-ff96c1d81133",
+      "width": 0,
+      "x": 448,
+      "y": 736,
+      "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -277,55 +292,31 @@
     },
     {
       "assetStoreId": "",
-      "bold": false,
-      "italic": false,
-      "name": "NewText",
-      "smoothed": true,
+      "bottomMargin": 9,
+      "height": 64,
+      "leftMargin": 9,
+      "name": "Panel_tekstowy",
+      "rightMargin": 9,
       "tags": "",
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [],
-      "effects": [
-        {
-          "effectType": "LightNight",
-          "name": "Effect",
-          "doubleParameters": {
-            "opacity": 1
-          },
-          "stringParameters": {},
-          "booleanParameters": {}
-        }
-      ],
-      "behaviors": [
-        {
-          "name": "Text_AutoTyping",
-          "type": "AutoTyping::Text_AutoTyping",
-          "Interval": 0.05,
-          "CharacterJustAdded": false,
-          "CurrentCharacter": ""
-        }
-      ],
-      "string": "",
-      "font": "",
-      "textAlignment": "left",
-      "characterSize": 80,
-      "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
-      }
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "NewSprite2",
-      "tags": "",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
+      "texture": "New image5",
+      "tiled": true,
+      "topMargin": 9,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 64,
       "variables": [],
       "effects": [],
-      "behaviors": [],
-      "animations": []
+      "behaviors": [
+        {
+          "bottomEdgeAnchor": 2,
+          "leftEdgeAnchor": 1,
+          "name": "Anchor",
+          "relativeToOriginalWindowSize": true,
+          "rightEdgeAnchor": 2,
+          "topEdgeAnchor": 0,
+          "type": "AnchorBehavior::AnchorBehavior",
+          "useLegacyBottomAndRightAnchors": false
+        }
+      ]
     },
     {
       "adaptCollisionMaskAutomatically": true,
@@ -334,14 +325,7 @@
       "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [
-        {
-          "folded": true,
-          "name": "Teksts_npc",
-          "type": "string",
-          "value": "aihkahxdsshydhsddjaijudhgfhycsjuxakjudhyjfghysjxuaijdufhyj"
-        }
-      ],
+      "variables": [],
       "effects": [],
       "behaviors": [],
       "animations": [
@@ -398,17 +382,13 @@
     },
     {
       "assetStoreId": "",
-      "bottomMargin": 9,
-      "height": 64,
-      "leftMargin": 9,
-      "name": "Panel_tekstowy",
-      "rightMargin": 9,
+      "bold": false,
+      "italic": false,
+      "name": "Npc_tekst",
+      "smoothed": true,
       "tags": "",
-      "texture": "New image5",
-      "tiled": true,
-      "topMargin": 9,
-      "type": "PanelSpriteObject::PanelSprite",
-      "width": 64,
+      "type": "TextObject::Text",
+      "underlined": false,
       "variables": [],
       "effects": [],
       "behaviors": [
@@ -421,8 +401,24 @@
           "topEdgeAnchor": 0,
           "type": "AnchorBehavior::AnchorBehavior",
           "useLegacyBottomAndRightAnchors": false
+        },
+        {
+          "name": "Text_AutoTyping",
+          "type": "AutoTyping::Text_AutoTyping",
+          "Interval": 0.05,
+          "CharacterJustAdded": false,
+          "CurrentCharacter": ""
         }
-      ]
+      ],
+      "string": "aihkahxdsshydhsddja\nijudhgfhycsjuxakjudhy\njfghysjxuaijdufhyj",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 80,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      }
     }
   ],
   "events": [
@@ -466,6 +462,14 @@
           },
           "parameters": [
             "Panel_tekstowy"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "Npc_tekst"
           ]
         }
       ]
@@ -589,18 +593,6 @@
             "",
             ""
           ]
-        },
-        {
-          "type": {
-            "value": "CentreCamera"
-          },
-          "parameters": [
-            "",
-            "NewSprite",
-            "",
-            "\"text\"",
-            ""
-          ]
         }
       ]
     },
@@ -657,22 +649,6 @@
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [
-        {
-          "type": {
-            "value": "TextObject::String"
-          },
-          "parameters": [
-            "NewText",
-            "=",
-            "GlobalVariableString(tekst)"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
           "type": {
@@ -693,49 +669,16 @@
             "",
             "e"
           ]
-        },
-        {
-          "type": {
-            "value": "VarGlobal"
-          },
-          "parameters": [
-            "textliczba",
-            "<",
-            "1"
-          ]
         }
       ],
       "actions": [
         {
           "type": {
-            "value": "Create"
+            "value": "Montre"
           },
           "parameters": [
-            "",
-            "NewText",
-            "Npc.PointX(\"x\")",
-            "Npc.PointY(\"y\")",
-            "\"text\""
-          ]
-        },
-        {
-          "type": {
-            "value": "ModVarGlobalTxt"
-          },
-          "parameters": [
-            "tekst",
-            "=",
-            "Npc.VariableString(Teksts_npc)"
-          ]
-        },
-        {
-          "type": {
-            "value": "ModVarGlobal"
-          },
-          "parameters": [
-            "textliczba",
-            "+",
-            "1"
+            "Panel_tekstowy",
+            ""
           ]
         },
         {
@@ -743,7 +686,17 @@
             "value": "Montre"
           },
           "parameters": [
-            "Panel_tekstowy",
+            "Npc_tekst",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "AutoTyping::Text_AutoTyping::StartAtBeginning"
+          },
+          "parameters": [
+            "Npc_tekst",
+            "Text_AutoTyping",
             ""
           ]
         }
@@ -765,21 +718,10 @@
       "actions": [
         {
           "type": {
-            "value": "Delete"
+            "value": "Cache"
           },
           "parameters": [
-            "NewText",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "ModVarGlobal"
-          },
-          "parameters": [
-            "textliczba",
-            "-",
-            "1"
+            "Npc_tekst"
           ]
         },
         {
