@@ -139,6 +139,45 @@
         "name": "New image5",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Letter Key_E.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "42bddef28299ae2740f9b7991497f1ea3270d6e41f1c46c492a3b212e92107a3_Letter Key_E.png",
+        "smoothed": true,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Xelu Free Controller and Key Prompts/Keyboard/Dark/42bddef28299ae2740f9b7991497f1ea3270d6e41f1c46c492a3b212e92107a3_Letter Key_E.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Function Key_F5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ecf8e0eba97c43116c2e54c1b0cd2a5d4c163645024c35106b436ede85556c05_Function Key_F5.png",
+        "smoothed": true,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Xelu Free Controller and Key Prompts/Keyboard/Light/ecf8e0eba97c43116c2e54c1b0cd2a5d4c163645024c35106b436ede85556c05_Function Key_F5.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Letter Key_E.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "071f40da07b07383cc65a5003100b8b84d3e0f5e9b77b2e2651940d521107a23_Letter Key_E.png",
+        "smoothed": true,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Xelu Free Controller and Key Prompts/Keyboard/Light/071f40da07b07383cc65a5003100b8b84d3e0f5e9b77b2e2651940d521107a23_Letter Key_E.png",
+          "name": "gdevelop-asset-store"
+        }
       }
     ],
     "resourceFolders": []

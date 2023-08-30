@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.35269049347712705,
+    "zoomFactor": 0.5800155239904935,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -143,8 +143,8 @@
       "name": "Npc",
       "persistentUuid": "a86f9fd7-c3d2-4f1e-b2de-a9fb643d0837",
       "width": 0,
-      "x": 404,
-      "y": 312,
+      "x": 544,
+      "y": 416,
       "zOrder": 9,
       "numberProperties": [],
       "stringProperties": [],
@@ -178,6 +178,22 @@
       "x": 448,
       "y": 736,
       "zOrder": 11,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "E",
+      "persistentUuid": "a8b1a4b3-347d-4a4d-a2c5-f935e7577936",
+      "width": 64,
+      "x": 544,
+      "y": 352,
+      "zOrder": 12,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -420,6 +436,67 @@
         "g": 0,
         "r": 0
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "E",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "071f40da07b07383cc65a5003100b8b84d3e0f5e9b77b2e2651940d521107a23_Letter Key_E.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 13,
+                        "y": 14
+                      },
+                      {
+                        "x": 87,
+                        "y": 14
+                      },
+                      {
+                        "x": 87,
+                        "y": 86
+                      },
+                      {
+                        "x": 13,
+                        "y": 86
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "events": [
@@ -462,6 +539,14 @@
             "value": "Cache"
           },
           "parameters": [
+            "Npc_tekst"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
             "Panel_tekstowy"
           ]
         },
@@ -470,7 +555,7 @@
             "value": "Cache"
           },
           "parameters": [
-            "Npc_tekst"
+            "E"
           ]
         }
       ]
@@ -671,22 +756,24 @@
       "conditions": [
         {
           "type": {
+            "inverted": true,
             "value": "PosX"
           },
           "parameters": [
             "Npc",
-            "!=",
-            "404"
+            "=",
+            "544"
           ]
         },
         {
           "type": {
+            "inverted": true,
             "value": "PosY"
           },
           "parameters": [
             "Npc",
-            "!=",
-            "312"
+            "=",
+            "416"
           ]
         }
       ],
@@ -697,10 +784,66 @@
           },
           "parameters": [
             "Npc",
-            "404",
-            "312",
+            "544",
+            "416",
             "200",
-            "0"
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetObjectTimer"
+          },
+          "parameters": [
+            "Npc",
+            "\"odległość\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CompareObjectTimer"
+          },
+          "parameters": [
+            "Npc",
+            "\"odległość\"",
+            ">=",
+            "3"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Arreter"
+          },
+          "parameters": [
+            "Npc"
+          ]
+        },
+        {
+          "type": {
+            "value": "MettreXY"
+          },
+          "parameters": [
+            "Npc",
+            "=",
+            "544",
+            "=",
+            "416"
+          ]
+        },
+        {
+          "type": {
+            "value": "PauseObjectTimer"
+          },
+          "parameters": [
+            "Npc",
+            "\"odległość\""
           ]
         }
       ]
@@ -726,7 +869,61 @@
           "parameters": [
             "NewSprite",
             "Npc",
-            "500",
+            "100",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "E",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "Distance"
+          },
+          "parameters": [
+            "NewSprite",
+            "Npc",
+            "100",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "E"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "Distance"
+          },
+          "parameters": [
+            "NewSprite",
+            "Npc",
+            "100",
             ""
           ]
         },
