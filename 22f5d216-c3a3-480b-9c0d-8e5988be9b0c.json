@@ -130,6 +130,15 @@
         "name": "NewSprite3",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/New image5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{},\"localFilePath\":\"assets/New image5.png\"}",
+        "name": "New image5",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []

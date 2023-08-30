@@ -9,7 +9,7 @@
   "title": "",
   "v": 209,
   "uiSettings": {
-    "grid": false,
+    "grid": true,
     "gridType": "rectangular",
     "gridWidth": 32,
     "gridHeight": 32,
@@ -17,8 +17,8 @@
     "gridOffsetY": 0,
     "gridColor": 10401023,
     "gridAlpha": 0.8,
-    "snap": false,
-    "zoomFactor": 0.40272258333259475,
+    "snap": true,
+    "zoomFactor": 0.35269049347712705,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -121,14 +121,15 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 64,
       "layer": "",
       "name": "NewPanelSprite",
       "persistentUuid": "93b52254-6814-4341-8c53-f396e3216447",
-      "width": 0,
-      "x": 1458,
-      "y": 364,
+      "width": 268,
+      "x": 1345,
+      "y": 336,
       "zOrder": 8,
       "numberProperties": [],
       "stringProperties": [],
@@ -145,6 +146,38 @@
       "x": 404,
       "y": 312,
       "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 352,
+      "layer": "ui",
+      "name": "Panel_tekstowy",
+      "persistentUuid": "62057939-f555-4736-bea9-053fdea19da1",
+      "width": 1088,
+      "x": 416,
+      "y": 704,
+      "zOrder": 10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 203,
+      "layer": "text",
+      "name": "Npc_tekst",
+      "persistentUuid": "e52c508d-d928-4ae8-b366-ff96c1d81133",
+      "width": 1024,
+      "x": 448,
+      "y": 736,
+      "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -260,55 +293,31 @@
     },
     {
       "assetStoreId": "",
-      "bold": false,
-      "italic": false,
-      "name": "NewText",
-      "smoothed": true,
+      "bottomMargin": 9,
+      "height": 64,
+      "leftMargin": 9,
+      "name": "Panel_tekstowy",
+      "rightMargin": 9,
       "tags": "",
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [],
-      "effects": [
-        {
-          "effectType": "LightNight",
-          "name": "Effect",
-          "doubleParameters": {
-            "opacity": 1
-          },
-          "stringParameters": {},
-          "booleanParameters": {}
-        }
-      ],
-      "behaviors": [
-        {
-          "name": "Text_AutoTyping",
-          "type": "AutoTyping::Text_AutoTyping",
-          "Interval": 0.05,
-          "CharacterJustAdded": false,
-          "CurrentCharacter": ""
-        }
-      ],
-      "string": "",
-      "font": "",
-      "textAlignment": "left",
-      "characterSize": 80,
-      "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
-      }
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "NewSprite2",
-      "tags": "",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
+      "texture": "New image5",
+      "tiled": true,
+      "topMargin": 9,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 64,
       "variables": [],
       "effects": [],
-      "behaviors": [],
-      "animations": []
+      "behaviors": [
+        {
+          "name": "Anchor",
+          "type": "AnchorBehavior::AnchorBehavior",
+          "bottomEdgeAnchor": 2,
+          "leftEdgeAnchor": 1,
+          "relativeToOriginalWindowSize": true,
+          "rightEdgeAnchor": 2,
+          "topEdgeAnchor": 0,
+          "useLegacyBottomAndRightAnchors": false
+        }
+      ]
     },
     {
       "adaptCollisionMaskAutomatically": true,
@@ -317,14 +326,7 @@
       "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [
-        {
-          "folded": true,
-          "name": "Teksts_npc",
-          "type": "string",
-          "value": "aihkahxdsshydhsddjaijudhgfhycsjuxakjudhyjfghysjxuaijdufhyj"
-        }
-      ],
+      "variables": [],
       "effects": [],
       "behaviors": [],
       "animations": [
@@ -378,6 +380,46 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "Npc_tekst",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "bottomEdgeAnchor": 2,
+          "leftEdgeAnchor": 1,
+          "name": "Anchor",
+          "rightEdgeAnchor": 2,
+          "topEdgeAnchor": 1,
+          "type": "AnchorBehavior::AnchorBehavior",
+          "relativeToOriginalWindowSize": true,
+          "useLegacyBottomAndRightAnchors": false
+        },
+        {
+          "name": "Text_AutoTyping",
+          "type": "AutoTyping::Text_AutoTyping",
+          "Interval": 0.05,
+          "CharacterJustAdded": false,
+          "CurrentCharacter": ""
+        }
+      ],
+      "string": "Testowy test \nspradzam właśnie",
+      "font": "",
+      "textAlignment": "center",
+      "characterSize": 51,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      }
     }
   ],
   "events": [
@@ -413,6 +455,22 @@
             "NewSprite",
             "TopDownMovement",
             "yes"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "Panel_tekstowy"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "Npc_tekst"
           ]
         }
       ]
@@ -536,18 +594,6 @@
             "",
             ""
           ]
-        },
-        {
-          "type": {
-            "value": "CentreCamera"
-          },
-          "parameters": [
-            "",
-            "NewSprite",
-            "",
-            "\"text\"",
-            ""
-          ]
         }
       ]
     },
@@ -592,6 +638,74 @@
       ]
     },
     {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "NewSprite",
+            "Npc",
+            "0",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SeparateFromObjects"
+          },
+          "parameters": [
+            "Npc",
+            "NewSprite",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PosX"
+          },
+          "parameters": [
+            "Npc",
+            "!=",
+            "404"
+          ]
+        },
+        {
+          "type": {
+            "value": "PosY"
+          },
+          "parameters": [
+            "Npc",
+            "!=",
+            "312"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AddForceVersPos"
+          },
+          "parameters": [
+            "Npc",
+            "404",
+            "312",
+            "200",
+            "0"
+          ]
+        }
+      ]
+    },
+    {
       "colorB": 228,
       "colorG": 176,
       "colorR": 74,
@@ -604,97 +718,55 @@
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [
-        {
-          "type": {
-            "value": "TextObject::String"
-          },
-          "parameters": [
-            "NewText",
-            "=",
-            "GlobalVariableString(tekst)"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
           "type": {
-            "value": "SourisSurObjet"
+            "value": "Distance"
           },
           "parameters": [
+            "NewSprite",
             "Npc",
-            "Left",
-            "",
+            "500",
             ""
           ]
         },
         {
           "type": {
-            "value": "MouseButtonPressed"
+            "value": "KeyPressed"
           },
           "parameters": [
             "",
-            "Left"
-          ]
-        },
-        {
-          "type": {
-            "value": "VarGlobal"
-          },
-          "parameters": [
-            "textliczba",
-            "<",
-            "1"
+            "e"
           ]
         }
       ],
       "actions": [
         {
           "type": {
-            "value": "ModVarGlobalTxt"
+            "value": "Montre"
           },
           "parameters": [
-            "tekst",
-            "=",
-            "Npc.VariableString(Teksts_npc)"
+            "Panel_tekstowy",
+            ""
           ]
         },
         {
           "type": {
-            "value": "Create"
+            "value": "Montre"
           },
           "parameters": [
-            "",
-            "NewText",
-            "CursorX()",
-            "CursorY()",
-            "\"text\""
+            "Npc_tekst",
+            ""
           ]
         },
         {
           "type": {
-            "value": "MettreXY"
+            "value": "AutoTyping::Text_AutoTyping::StartAtBeginning"
           },
           "parameters": [
-            "NewText",
-            "=",
-            "CursorX() + 100",
-            "=",
-            "CursorY()"
-          ]
-        },
-        {
-          "type": {
-            "value": "ModVarGlobal"
-          },
-          "parameters": [
-            "textliczba",
-            "+",
-            "1"
+            "Npc_tekst",
+            "Text_AutoTyping",
+            ""
           ]
         }
       ]
@@ -715,21 +787,18 @@
       "actions": [
         {
           "type": {
-            "value": "Delete"
+            "value": "Cache"
           },
           "parameters": [
-            "NewText",
-            ""
+            "Npc_tekst"
           ]
         },
         {
           "type": {
-            "value": "ModVarGlobal"
+            "value": "Cache"
           },
           "parameters": [
-            "textliczba",
-            "-",
-            "1"
+            "Panel_tekstowy"
           ]
         }
       ]
@@ -773,7 +842,7 @@
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
       "isLocked": false,
-      "name": "text",
+      "name": "ui",
       "renderingType": "",
       "visibility": true,
       "cameras": [],
@@ -789,7 +858,7 @@
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
       "isLocked": false,
-      "name": "kamera",
+      "name": "text",
       "renderingType": "",
       "visibility": true,
       "cameras": [],
@@ -797,6 +866,34 @@
     }
   ],
   "behaviorsSharedData": [
+    {
+      "name": "Anchor",
+      "type": "AnchorBehavior::AnchorBehavior"
+    },
+    {
+      "name": "Animation",
+      "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
+      "name": "Effect",
+      "type": "EffectCapability::EffectBehavior"
+    },
+    {
+      "name": "Flippable",
+      "type": "FlippableCapability::FlippableBehavior"
+    },
+    {
+      "name": "Opacity",
+      "type": "OpacityCapability::OpacityBehavior"
+    },
+    {
+      "name": "Resizable",
+      "type": "ResizableCapability::ResizableBehavior"
+    },
+    {
+      "name": "Scale",
+      "type": "ScalableCapability::ScalableBehavior"
+    },
     {
       "name": "Text_AutoTyping",
       "type": "AutoTyping::Text_AutoTyping"
