@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.4027225833325958,
+    "zoomFactor": 0.35269049347712705,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -168,12 +168,13 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 203,
       "layer": "text",
       "name": "Npc_tekst",
       "persistentUuid": "e52c508d-d928-4ae8-b366-ff96c1d81133",
-      "width": 0,
+      "width": 1024,
       "x": 448,
       "y": 736,
       "zOrder": 11,
@@ -382,7 +383,7 @@
     },
     {
       "assetStoreId": "",
-      "bold": false,
+      "bold": true,
       "italic": false,
       "name": "Npc_tekst",
       "smoothed": true,
@@ -393,13 +394,13 @@
       "effects": [],
       "behaviors": [
         {
-          "name": "Anchor",
-          "type": "AnchorBehavior::AnchorBehavior",
           "bottomEdgeAnchor": 2,
           "leftEdgeAnchor": 1,
-          "relativeToOriginalWindowSize": true,
+          "name": "Anchor",
           "rightEdgeAnchor": 2,
-          "topEdgeAnchor": 0,
+          "topEdgeAnchor": 1,
+          "type": "AnchorBehavior::AnchorBehavior",
+          "relativeToOriginalWindowSize": true,
           "useLegacyBottomAndRightAnchors": false
         },
         {
@@ -410,10 +411,10 @@
           "CurrentCharacter": ""
         }
       ],
-      "string": "aihkahxdsshydhsddja\nijudhgfhycsjuxakjudhy\njfghysjxuaijdufhyj",
+      "string": "Testowy test \nspradzam właśnie",
       "font": "",
-      "textAlignment": "left",
-      "characterSize": 80,
+      "textAlignment": "center",
+      "characterSize": 51,
       "color": {
         "b": 0,
         "g": 0,
@@ -637,6 +638,74 @@
       ]
     },
     {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "NewSprite",
+            "Npc",
+            "0",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SeparateFromObjects"
+          },
+          "parameters": [
+            "Npc",
+            "NewSprite",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PosX"
+          },
+          "parameters": [
+            "Npc",
+            "!=",
+            "404"
+          ]
+        },
+        {
+          "type": {
+            "value": "PosY"
+          },
+          "parameters": [
+            "Npc",
+            "!=",
+            "312"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AddForceVersPos"
+          },
+          "parameters": [
+            "Npc",
+            "404",
+            "312",
+            "200",
+            "0"
+          ]
+        }
+      ]
+    },
+    {
       "colorB": 228,
       "colorG": 176,
       "colorR": 74,
@@ -800,6 +869,30 @@
     {
       "name": "Anchor",
       "type": "AnchorBehavior::AnchorBehavior"
+    },
+    {
+      "name": "Animation",
+      "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
+      "name": "Effect",
+      "type": "EffectCapability::EffectBehavior"
+    },
+    {
+      "name": "Flippable",
+      "type": "FlippableCapability::FlippableBehavior"
+    },
+    {
+      "name": "Opacity",
+      "type": "OpacityCapability::OpacityBehavior"
+    },
+    {
+      "name": "Resizable",
+      "type": "ResizableCapability::ResizableBehavior"
+    },
+    {
+      "name": "Scale",
+      "type": "ScalableCapability::ScalableBehavior"
     },
     {
       "name": "Text_AutoTyping",
