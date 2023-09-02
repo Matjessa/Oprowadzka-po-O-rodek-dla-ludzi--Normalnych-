@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.5800155239904935,
+    "zoomFactor": 0.18781732880530688,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -194,6 +194,22 @@
       "x": 544,
       "y": 352,
       "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 47,
+      "customSize": true,
+      "depth": 1,
+      "height": 512,
+      "layer": "",
+      "name": "NewTiledSprite",
+      "persistentUuid": "0bac209b-ded8-4116-a551-dcd0e8165e71",
+      "width": 32,
+      "x": 672,
+      "y": -320,
+      "zOrder": 13,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -410,12 +426,12 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "Anchor",
+          "type": "AnchorBehavior::AnchorBehavior",
           "bottomEdgeAnchor": 2,
           "leftEdgeAnchor": 1,
-          "name": "Anchor",
           "rightEdgeAnchor": 2,
           "topEdgeAnchor": 1,
-          "type": "AnchorBehavior::AnchorBehavior",
           "relativeToOriginalWindowSize": true,
           "useLegacyBottomAndRightAnchors": false
         },
