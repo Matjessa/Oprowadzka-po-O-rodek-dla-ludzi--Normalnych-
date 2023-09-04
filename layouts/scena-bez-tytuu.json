@@ -9,7 +9,7 @@
   "title": "",
   "v": 209,
   "uiSettings": {
-    "grid": true,
+    "grid": false,
     "gridType": "rectangular",
     "gridWidth": 32,
     "gridHeight": 32,
@@ -17,8 +17,8 @@
     "gridOffsetY": 0,
     "gridColor": 10401023,
     "gridAlpha": 0.8,
-    "snap": true,
-    "zoomFactor": 0.18781732880530688,
+    "snap": false,
+    "zoomFactor": 0.04664523022745633,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -29,11 +29,11 @@
       "customSize": false,
       "height": 0,
       "layer": "",
-      "name": "NewSprite",
+      "name": "Gracz",
       "persistentUuid": "c0df4b81-69f4-4349-99fb-4666d275aaa8",
       "width": 0,
-      "x": 927,
-      "y": 503,
+      "x": -1577,
+      "y": -7695,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -199,101 +199,215 @@
       "initialVariables": []
     },
     {
-      "angle": 47,
+      "angle": 180,
       "customSize": true,
       "depth": 1,
-      "height": 512,
+      "height": 75,
       "layer": "",
       "name": "NewTiledSprite",
-      "persistentUuid": "0bac209b-ded8-4116-a551-dcd0e8165e71",
+      "persistentUuid": "12c3d33b-14cd-48a1-a0e4-172ce477962e",
+      "width": 5568,
+      "x": -992,
+      "y": -2144,
+      "zOrder": 14,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 3197,
+      "layer": "",
+      "name": "NewTiledSprite",
+      "persistentUuid": "57d692b5-462e-47d4-9dd6-0e3bbd5aa290",
       "width": 32,
-      "x": 672,
-      "y": -320,
-      "zOrder": 13,
+      "x": 4544,
+      "y": -5279,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 2724,
+      "layer": "",
+      "name": "NewTiledSprite",
+      "persistentUuid": "512a8de9-103b-4ca4-80da-4f1e6cad3872",
+      "width": 32,
+      "x": -992,
+      "y": -4804,
+      "zOrder": 16,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 360,
+      "customSize": true,
+      "depth": 1,
+      "height": 57,
+      "layer": "",
+      "name": "NewTiledSprite",
+      "persistentUuid": "38b17718-c342-49a5-ac70-cd486715014f",
+      "width": 2406,
+      "x": -990,
+      "y": -5350,
+      "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 70,
+      "layer": "",
+      "name": "NewTiledSprite",
+      "persistentUuid": "8048d99f-da08-42bc-8816-509c4cda550c",
+      "width": 2861,
+      "x": 1712,
+      "y": -5343,
+      "zOrder": 19,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 2148,
+      "layer": "",
+      "name": "NewTiledSprite",
+      "persistentUuid": "67c38266-d0b7-4349-bf8a-6c3926b10ac2",
+      "width": 77,
+      "x": 1334,
+      "y": -7445,
+      "zOrder": 20,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 2119,
+      "layer": "",
+      "name": "NewTiledSprite",
+      "persistentUuid": "151c24c2-3c7a-4805-82a2-512ceebe432e",
+      "width": 99,
+      "x": 1704,
+      "y": -7425,
+      "zOrder": 21,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 58,
+      "layer": "",
+      "name": "NewTiledSprite",
+      "persistentUuid": "82dd1cf6-1bc7-4102-948a-597ed9ec00ca",
+      "width": 3587,
+      "x": -2181,
+      "y": -7470,
+      "zOrder": 22,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 114,
+      "layer": "",
+      "name": "NewTiledSprite",
+      "persistentUuid": "44498468-2074-4422-9544-c58e65e7b41c",
+      "width": 4279,
+      "x": 1710,
+      "y": -7468,
+      "zOrder": 23,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 120,
+      "layer": "",
+      "name": "NewTiledSprite",
+      "persistentUuid": "7314eea2-b8df-4743-abbc-b2bfa325271b",
+      "width": 8329,
+      "x": -2193,
+      "y": -8450,
+      "zOrder": 24,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 973,
+      "layer": "",
+      "name": "NewTiledSprite",
+      "persistentUuid": "9530e4f1-ecde-4cca-b18d-6e9f1af68633",
+      "width": 32,
+      "x": 5942,
+      "y": -8328,
+      "zOrder": 25,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 998,
+      "layer": "",
+      "name": "NewTiledSprite",
+      "persistentUuid": "640491e7-4557-4e61-966a-39adc276b42b",
+      "width": 129,
+      "x": -2180,
+      "y": -8422,
+      "zOrder": 26,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "NewPanelSprite",
+      "persistentUuid": "e5515e46-ac79-47b9-bf5e-e4eaedc87bfd",
+      "width": 906,
+      "x": -1906,
+      "y": -8237,
+      "zOrder": 27,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
     }
   ],
   "objects": [
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "NewSprite",
-      "tags": "",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "TopDownMovement",
-          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
-          "acceleration": 400,
-          "allowDiagonals": true,
-          "angleOffset": 0,
-          "angularMaxSpeed": 180,
-          "customIsometryAngle": 30,
-          "deceleration": 800,
-          "ignoreDefaultControls": false,
-          "maxSpeed": 200,
-          "movementAngleOffset": 0,
-          "rotateObject": true,
-          "viewpoint": "TopDown"
-        }
-      ],
-      "animations": [
-        {
-          "name": "NewSprite",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "NewSprite",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 64,
-                        "y": 0
-                      },
-                      {
-                        "x": 64,
-                        "y": 64
-                      },
-                      {
-                        "x": 0,
-                        "y": 64
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
     {
       "assetStoreId": "",
       "height": 32,
@@ -545,7 +659,7 @@
             "value": "TopDownMovementBehavior::IgnoreDefaultControls"
           },
           "parameters": [
-            "NewSprite",
+            "Gracz",
             "TopDownMovement",
             "yes"
           ]
@@ -595,7 +709,7 @@
             "value": "TopDownMovementBehavior::SimulateControl"
           },
           "parameters": [
-            "NewSprite",
+            "Gracz",
             "TopDownMovement",
             "\"Up\""
           ]
@@ -621,7 +735,7 @@
             "value": "TopDownMovementBehavior::SimulateControl"
           },
           "parameters": [
-            "NewSprite",
+            "Gracz",
             "TopDownMovement",
             "\"Left\""
           ]
@@ -647,7 +761,7 @@
             "value": "TopDownMovementBehavior::SimulateControl"
           },
           "parameters": [
-            "NewSprite",
+            "Gracz",
             "TopDownMovement",
             "\"Down\""
           ]
@@ -673,7 +787,7 @@
             "value": "TopDownMovementBehavior::SimulateControl"
           },
           "parameters": [
-            "NewSprite",
+            "Gracz",
             "TopDownMovement",
             "\"Right\""
           ]
@@ -690,7 +804,7 @@
           },
           "parameters": [
             "",
-            "NewSprite",
+            "Gracz",
             "",
             "",
             ""
@@ -717,7 +831,7 @@
             "value": "CollisionNP"
           },
           "parameters": [
-            "NewSprite",
+            "Gracz",
             "NewTiledSprite",
             "0",
             "",
@@ -731,7 +845,7 @@
             "value": "SeparateFromObjects"
           },
           "parameters": [
-            "NewSprite",
+            "Gracz",
             "NewTiledSprite",
             ""
           ]
@@ -746,7 +860,7 @@
             "value": "CollisionNP"
           },
           "parameters": [
-            "NewSprite",
+            "Gracz",
             "Npc",
             "0",
             "",
@@ -761,7 +875,7 @@
           },
           "parameters": [
             "Npc",
-            "NewSprite",
+            "Gracz",
             ""
           ]
         }
@@ -883,7 +997,7 @@
             "value": "Distance"
           },
           "parameters": [
-            "NewSprite",
+            "Gracz",
             "Npc",
             "100",
             ""
@@ -911,7 +1025,7 @@
             "value": "Distance"
           },
           "parameters": [
-            "NewSprite",
+            "Gracz",
             "Npc",
             "100",
             ""
@@ -937,7 +1051,7 @@
             "value": "Distance"
           },
           "parameters": [
-            "NewSprite",
+            "Gracz",
             "Npc",
             "100",
             ""
@@ -1012,6 +1126,100 @@
           },
           "parameters": [
             "Panel_tekstowy"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "KeyPressed"
+          },
+          "parameters": [
+            "",
+            "F1"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "TopDownMovementBehavior::MaxSpeed"
+          },
+          "parameters": [
+            "Gracz",
+            "TopDownMovement",
+            "=",
+            "20000"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "KeyPressed"
+          },
+          "parameters": [
+            "",
+            "F2"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ZoomCamera"
+          },
+          "parameters": [
+            "",
+            "0.5",
+            "",
+            "0"
+          ]
+        }
+      ]
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Zmiana sceny",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [],
+      "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Gracz",
+            "NewPanelSprite",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Ogólny\"",
+            "yes"
           ]
         }
       ]
